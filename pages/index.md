@@ -3,7 +3,7 @@ title: Get started with Markdoc
 description: How to get started with Markdoc
 ---
 
-# Full Next.js example
+# FireMon
 
 {% callout %}
 This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
