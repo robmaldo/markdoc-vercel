@@ -5,6 +5,7 @@ import Link from 'next/link';
 const items = [
    {
         title: 'FireMon',
+        links: []
       },
   {
     links: [{href: '/docs/Authentication', children: 'Authentication'}],
