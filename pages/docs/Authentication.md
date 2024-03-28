@@ -8,17 +8,6 @@
 
 ### Request Headers
 
-{% table %}
-* Key
-* Value
----
-* Content-Type
-* application/json; charset=utf-8
----
-* Row 2 Cell 1
-* Row 2 cell 2
-  {% /table %}
-
 | **Key**      | **Value**                       |
 | ------------ | ------------------------------- |
 | Content-Type | application/json; charset=utf-8 |
