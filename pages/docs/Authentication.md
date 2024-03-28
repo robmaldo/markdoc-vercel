@@ -1,16 +1,15 @@
+```markdown
 # Step 1: Retrieve Authentication Token
 
 ## Endpoint
 
-| Request Method | Endpoint                                                |
-| -------------- | ------------------------------------------------------- |
-| POST           | `{{base_url}}/securitymanager/api/authentication/login` |
+- **Request Method**: POST
+- **Endpoint**: `{{base_url}}/securitymanager/api/authentication/login`
 
 ## Request Headers
 
-| Key          | Value                          |
-| ------------ | ------------------------------ |
-| Content-Type | application/json; charset=utf-8 |
+- **Key**: Content-Type
+- **Value**: application/json; charset=utf-8
 
 ## Request Body
 
@@ -18,7 +17,7 @@
 
 ## Example Response
 
-```
+```json
 {
   "authorized": true,
   "authCode": 0,
@@ -36,13 +35,12 @@
 
 This example endpoint will retrieve all devices in FireMon
 
-| Request Method | Endpoint                                                   |
-| -------------- | ---------------------------------------------------------- |
-| GET            | `{{base_url}}/securitymanager/api/domain/{{domain_id}}/device` |
+- **Request Method**: GET
+- **Endpoint**: `{{base_url}}/securitymanager/api/domain/{{domain_id}}/device`
 
 ## Request Headers
 
-| Key             | Value                          |
-| --------------- | ------------------------------ |
-| Content-Type    | application/json; charset=utf-8 |
-| X-FM-Auth-Token | `token` value from Step 1      |
+- **Key**: Content-Type
+- **Value**: application/json; charset=utf-8
+- **X-FM-Auth-Token**: `token` value from Step 1
+```
