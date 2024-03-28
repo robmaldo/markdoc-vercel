@@ -5,7 +5,7 @@ import Link from 'next/link';
 const items = [
   {
     title: 'Get started',
-    links: [{href: '/docs/Authentication', children: 'Overview'}],
+    links: [{href: '/docs/Authentication.md', children: 'Overview'}],
   },
 ];
 
