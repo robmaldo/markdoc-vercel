@@ -1,4 +1,3 @@
-```markdown
 # Step 1: Retrieve Authentication Token
 
 ## Endpoint
@@ -15,16 +14,11 @@
 
 ## Request Body
 
-```json
-{
-  "username": "string",
-  "password": "string"
-}
-```
+`{"username": "string", "password": "string"}`
 
 ## Example Response
 
-```json
+```
 {
   "authorized": true,
   "authCode": 0,
@@ -40,7 +34,7 @@
 
 ## Example Endpoint
 
-This example endpoint will retrieve all devices in FireMon something
+This example endpoint will retrieve all devices in FireMon
 
 | Request Method | Endpoint                                                   |
 | -------------- | ---------------------------------------------------------- |
@@ -52,4 +46,3 @@ This example endpoint will retrieve all devices in FireMon something
 | --------------- | ------------------------------ |
 | Content-Type    | application/json; charset=utf-8 |
 | X-FM-Auth-Token | `token` value from Step 1      |
-```
