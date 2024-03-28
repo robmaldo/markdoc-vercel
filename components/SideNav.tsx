@@ -9,7 +9,7 @@ const items = [
   },
   {
       title: 'ParseCSV',
-      links: [{href: '/docs/ParseCSV', children: 'ParseCSV'],
+      links: [{href: '/docs/ParseCSV', children: 'ParseCSV'}],
     },
 ];
 
