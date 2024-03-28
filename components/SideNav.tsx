@@ -3,15 +3,12 @@ import {useRouter} from 'next/router';
 import Link from 'next/link';
 
 const items = [
-   {
-        title: 'FireMon',
-        links: []
-      },
   {
+    title: 'Get started',
     links: [{href: '/docs/Authentication', children: 'Authentication'}],
   },
   {
-      title: 'Policy Planner',
+      title: 'ParseCSV',
       links: [{href: '/docs/ParseCSV', children: 'ParseCSV'}],
     },
 ];

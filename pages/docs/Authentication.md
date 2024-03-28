@@ -1,18 +1,19 @@
-## Step 1: Retrieve Authentication Token
+```markdown
+# Step 1: Retrieve Authentication Token
 
-### Endpoint
+## Endpoint
 
-| **Request Method** | **Endpoint**                                            |
-| ------------------ | ------------------------------------------------------- |
-| POST               | `{{base_url}}/securitymanager/api/authentication/login` |
+| Request Method | Endpoint                                                |
+| -------------- | ------------------------------------------------------- |
+| POST           | `{{base_url}}/securitymanager/api/authentication/login` |
 
-### Request Headers
+## Request Headers
 
-| **Key**      | **Value**                       |
-| ------------ | ------------------------------- |
+| Key          | Value                          |
+| ------------ | ------------------------------ |
 | Content-Type | application/json; charset=utf-8 |
 
-### Request Body
+## Request Body
 
 ```json
 {
@@ -21,34 +22,34 @@
 }
 ```
 
-### Example Response
+## Example Response
 
 ```json
 {
-    "authorized": true,
-    "authCode": 0,
-    "authStatus": "AUTHORIZED",
-    "token": "string",
-    "tokenTTL": 1800
+  "authorized": true,
+  "authCode": 0,
+  "authStatus": "AUTHORIZED",
+  "token": "string",
+  "tokenTTL": 1800
 }
 ```
 
-*The value for* *`token`* *will be used to authenticate future API calls.*
+*The value for `token` will be used to authenticate future API calls.*
 
-## Step 2: Use Authentication Token
+# Step 2: Use Authentication Token
 
-### Example Endpoint
+## Example Endpoint
 
 This example endpoint will retrieve all devices in FireMon
 
-| **Request Method** | **Endpoint**                                                   |
-| ------------------ | -------------------------------------------------------------- |
-| GET                | `{{base_url}}/securitymanager/api/domain/{{domain_id}}/device` |
+| Request Method | Endpoint                                                   |
+| -------------- | ---------------------------------------------------------- |
+| GET            | `{{base_url}}/securitymanager/api/domain/{{domain_id}}/device` |
 
-### Request Headers
+## Request Headers
 
-| **Key**         | **Value**                       |
-| --------------- | ------------------------------- |
+| Key             | Value                          |
+| --------------- | ------------------------------ |
 | Content-Type    | application/json; charset=utf-8 |
-| X-FM-Auth-Token | `token` value from Step 1       |
-
+| X-FM-Auth-Token | `token` value from Step 1      |
+```
