@@ -1,44 +1,55 @@
----
-title: Get started with Markdoc
-description: How to get started with Markdoc
----
+## Step 1: Retrieve Authentication Token
 
-# Authentication
+### Endpoint
 
-{% callout %}
-This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
-{% /callout %}
+| **Request Method** | **Endpoint**                                            |
+| ------------------ | ------------------------------------------------------- |
+| POST               | `{{base_url}}/securitymanager/api/authentication/login` |
 
-## Setup
+### Request Headers
 
-First, clone this repo and install the dependencies required:
+| **Key**      | **Value**                       |
+| ------------ | ------------------------------- |
+| Content-Type | application/json; charset=utf-8 |
 
-```bash
-npm install
-# or
-yarn install
+### Request Body
+
+```json
+{
+  "username": "string",
+  "password": "string"
+}
 ```
 
-Then, run the development server:
+### Example Response
 
-```bash
-npm run dev
-# or
-yarn dev
+```json
+{
+    "authorized": true,
+    "authCode": 0,
+    "authStatus": "AUTHORIZED",
+    "token": "string",
+    "tokenTTL": 1800
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*The value for* *`token`* *will be used to authenticate future API calls.*
 
-You can start editing the page by modifying `index.md`. The page auto-updates as you edit the file.
+## Step 2: Use Authentication Token
 
-## Deploy
+### Example Endpoint
 
-The quickest way to deploy your own version of this boilerplate is by deploying it with [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com/) by clicking one of the buttons below.
+This example endpoint will retrieve all devices in FireMon
 
-### Deploy with Vercel
+| **Request Method** | **Endpoint**                                                   |
+| ------------------ | -------------------------------------------------------------- |
+| GET                | `{{base_url}}/securitymanager/api/domain/{{domain_id}}/device` |
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/markdoc/next.js-starter)
+### Request Headers
 
-### Deploy to Netlify
+| **Key**         | **Value**                       |
+| --------------- | ------------------------------- |
+| Content-Type    | application/json; charset=utf-8 |
+| X-FM-Auth-Token | `token` value from Step 1       |
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markdoc/next.js-starter)
+<br>
