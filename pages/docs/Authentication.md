@@ -40,7 +40,7 @@
 
 ## Example Endpoint
 
-This example endpoint will retrieve all devices in FireMon
+This example endpoint will retrieve all devices in FireMon something
 
 | Request Method | Endpoint                                                   |
 | -------------- | ---------------------------------------------------------- |
