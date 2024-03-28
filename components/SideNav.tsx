@@ -5,11 +5,11 @@ import Link from 'next/link';
 const items = [
   {
     title: 'Get started',
-    links: [{href: '/docs/Authentication', children: 'Authentication'}],
+    links: [{href: '/docs/Authentication', children: 'Authentication'}]
   },
   {
       title: 'ParseCSV',
-      links: [{href: '/docs/ParseCSV'],
+      links: [{href: '/docs/ParseCSV', children: 'ParseCSV']
     },
 ];
 
