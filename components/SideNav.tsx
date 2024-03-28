@@ -7,6 +7,10 @@ const items = [
     title: 'Get started',
     links: [{href: '/docs/Authentication', children: 'Authentication'}],
   },
+  {
+      title: 'ParseCSV',
+      links: [{href: '/docs/ParseCSV'],
+    },
 ];
 
 export function SideNav() {

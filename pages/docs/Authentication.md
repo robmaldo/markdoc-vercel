@@ -52,4 +52,3 @@ This example endpoint will retrieve all devices in FireMon
 | Content-Type    | application/json; charset=utf-8 |
 | X-FM-Auth-Token | `token` value from Step 1       |
 
-<br>
