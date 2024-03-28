@@ -8,7 +8,7 @@ const items = [
     links: [{href: '/docs/Authentication', children: 'Authentication'}],
   },
   {
-      title: 'ParseCSV',
+      title: 'Policy Planner',
       links: [{href: '/docs/ParseCSV', children: 'ParseCSV'}],
     },
 ];
